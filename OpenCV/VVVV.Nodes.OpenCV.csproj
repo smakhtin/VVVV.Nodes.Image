@@ -91,6 +91,9 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="src\CameraCalibration\CalibrateCamera.cs" />
+    <Compile Include="src\CameraCalibration\Extrinsics.cs" />
+    <Compile Include="src\CameraCalibration\Intrinsics.cs" />
+    <Compile Include="src\CameraCalibration\StereoCalibrate.cs" />
     <Compile Include="src\CameraCalibration\ExtrinsicsSplitNode.cs" />
     <Compile Include="src\CameraCalibration\FindBoardInstance.cs" />
     <Compile Include="src\CameraCalibration\FindBoardNode.cs" />
@@ -218,7 +221,7 @@
     <Compile Include="src\Destinations\TextRecognitionNode.cs" />
     <Compile Include="src\Filters\BackgroundSubtract.cs" />
     <Compile Include="src\Filters\Canny.cs" />
-    <Compile Include="src\Filters\CropNode.cs" />
+    <Compile Include="src\Filters\S+H.cs" />
     <Compile Include="src\Filters\GammaCorrectNode.cs" />
     <Compile Include="src\Filters\Not.cs" />
     <Compile Include="src\Filters\Grayscale.cs" />
