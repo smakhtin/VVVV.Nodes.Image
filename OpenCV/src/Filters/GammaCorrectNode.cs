@@ -16,19 +16,19 @@ namespace VVVV.Nodes.OpenCV.Filters
 			Gamma = 1.8d;
 			Size size = FInput.Image.ImageAttributes.Size;
 
-			FGrayScaleImage.Initialise(size, TColourFormat.L32F);
-			FOutput.Image.Initialise(size, TColourFormat.L8);
+			FGrayScaleImage.Initialise(size, TColorFormat.L32F);
+			FOutput.Image.Initialise(size, TColorFormat.L8);
 		}
 
 		public override void Process()
 		{
 			if (!FInput.LockForReading()) return;
 
-			FInput.Image.GetImage(TColourFormat.L32F, FGrayScaleImage);
+			FInput.Image.GetImage(TColorFormat.L32F, FGrayScaleImage);
 			IntPtr grayScalePtr = FGrayScaleImage.CvMat;
 			CvInvoke.cvPow(grayScalePtr, grayScalePtr, Gamma);
 
-			FGrayScaleImage.GetImage(TColourFormat.L8, FOutput.Image);
+			FGrayScaleImage.GetImage(TColorFormat.L8, FOutput.Image);
 			IntPtr grayCodePtr = FOutput.Image.CvMat;
 			CvInvoke.cvEqualizeHist(grayCodePtr, grayCodePtr);
 			

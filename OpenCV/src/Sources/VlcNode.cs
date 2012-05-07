@@ -1354,7 +1354,7 @@ namespace VVVV.Nodes.EmguCV
 			{
 
 				CVImageAttributes cvImageAttributes = new CVImageAttributes();
-				cvImageAttributes.ColourFormat = TColourFormat.RGBA8;
+				cvImageAttributes.ColourFormat = TColorFormat.RGBA8;
 				cvImageAttributes.FSize = new Size(w, h);
 
 				imageAandB.Initialise(cvImageAttributes);

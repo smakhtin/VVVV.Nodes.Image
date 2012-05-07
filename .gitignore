@@ -1,6 +1,7 @@
 #OS junk files
 [Tt]humbs.db
 *.DS_Store
+*dat
 
 #Visual Studio files
 *.[Oo]bj
@@ -31,6 +32,7 @@ obj/
 [Dd]ebug*/
 [Rr]elease*/
 Ankh.NoLoad
+*.DotSettings
 
 #Tooling
 _ReSharper*/
@@ -49,9 +51,6 @@ _ReSharper*/
 
 # VVVV bcp
 *~.xml
-
-#dll's
-*.dll
 
 #media files
 *.avi
